@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&family=Red+Hat+Display:wght@300;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2e4386;
+}
+
+header{
+    background-color: #EDBCE0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#titulo{
+    margin-left: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#titulo1{
+    color: #FF08EE;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#titulo2{
+    color: #EDBCE0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+hr{
+    width: 5%;
+    margin-top: 15px;
+    background-color: black;
+    border: solid 1px;
+    height: 2px;
+    border-radius: 40px;
+}
+
+#titulo-entrar{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #EDBCE0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3{
+    font-weight: bold;
+    color: #2D4386;
+}
+
+#hora, #dia{
+    color: #FF08EE;
+    font-weight: 500;
+}
+
+#relogio-virtual{
+    display: flex;
+    gap: 10px;
+}
+
+#logo-relogio{
+    width: 45px;
+}
+
+#containers{
+    display: flex;
+    gap: 400px;
+    width: 100%;
+}
+
+#container1{
+    background-color: #EDBCE0;
+    margin: 30px;
+    padding: 15px;
+    width: 250px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+#container2{
+    width: 350px;
+    margin-top: -65px;
+}
+
+#data{
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+form{
+    margin: 15px;
+}
+
+fieldset{
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-relogio{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #2D4386;
+    font-weight: bold;
+}
+
+.label-entrar{
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#user, #password{
+    background-color: #f1c9e6;
+    border: 0;
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#user2, #password2{
+    background-color: #58699f;
+    border: 0;
+    border-radius: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 220px;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+.botao{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #FF08EE;
+    border: 0;
+    border-radius: 40px;
+    padding: 10px;
+    width: 150px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.botao:hover{
+    background-color: #cf0ac2;
+}
+
+@media only screen and (max-width: 768px){
+    #containers{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #container2 {
+        margin-top: 100px;
+    }
+    #container1 {
+        margin-top: -300px;
+    }
+    hr{
+        width: 20%;
+    }
+}
+
+@media (min-width: 1920px){
+    #container2{
+        margin-left: 700px;
+    }
+    hr{
+        width: 3%;
+    }
+}
